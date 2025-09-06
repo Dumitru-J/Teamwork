@@ -2,3 +2,6 @@
 
 ## Einleitung
 Dies ist der Start unseres Projektberichts.
+
+## Abschnitt A von Developer A
+Hier sind meine wichtigen Erkenntnisse für Abschnitt A.
