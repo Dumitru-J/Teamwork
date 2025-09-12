@@ -15,6 +15,6 @@ POST http://localhost:3000/users
 content-type: application/json
 
 {
-    "name": "User 3",
+    "name": "User 4",
     "age": 30
 }
