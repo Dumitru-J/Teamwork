@@ -7,6 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
+  "nodemonConfig": {
+    "ignore": ["*.json", "public/javascipt/*.js"]
+  
+    
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dumitru-J/Teamwork.git"

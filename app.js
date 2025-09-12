@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import fs from 'fs/promises';
+import { write } from 'fs';
 
 
 
@@ -13,12 +14,13 @@ const users = [];
 app.post('/users', (req, res) => {
     const user = req.body;
     users.push(user);
+    writeUsersToFile(users);
     console.log('Neuer Benutzer hinzugefügt:', user);
     res.status(201).send(user);
 });
 
-async function writeUsersToFile(user) {
-    const data = JSON.stringify(user, null, 2);
+async function writeUsersToFile(users) {
+    const data = JSON.stringify(users, null, 2);
     await fs.writeFile('users.json', data);
     console.log('Benutzerdaten wurden in users.json gespeichert');      
 }
