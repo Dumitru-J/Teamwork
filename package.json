@@ -1,0 +1,23 @@
+{
+  "name": "teamwork",
+  "version": "1.0.0",
+  "description": "Gruppenarbeit",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dumitru-J/Teamwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dumitru-J/Teamwork/issues"
+  },
+  "homepage": "https://github.com/Dumitru-J/Teamwork#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
