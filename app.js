@@ -20,6 +20,9 @@ app.post('/api/user', (req, res) => {
   console.log(`Empfangene Rolle: ${role}`);
   // Daten aus dem Request-Body
   const { name, age } = req.body;
+  if(role === undefined) {
+    return res.status(400).json({ error: 'Rolle ist erforderlich' });
+  };
   res.json({
     message: `Benutzer ${name} (${age}) mit Rolle ${role} wurde empfangen.`,
     data: { name, age, role }
